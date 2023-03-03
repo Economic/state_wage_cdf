@@ -22,8 +22,6 @@ title: "Numbers of workers by wage bins in `r state_name`"
 ---
 
 ```{r}
-
-
 tar_read(org_results) %>% 
   filter(state_abb == params$state_abb) %>% 
   select(
